@@ -21,7 +21,7 @@ function BadgeIcon() {
  
   return (
     
-      <Badge badgeContent={cart.length} color='primary' margin='0'>
+    <Badge badgeContent={cart.length} color='primary' margin='0' className='m-0 p-0'>
       <ShoppingBagIcon className='text-black '/>
   </Badge>
   )
