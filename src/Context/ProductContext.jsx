@@ -39,7 +39,7 @@ function ProductProvider({ children }) {
                 const response = await fetch('https://fakestoreapi.com/products')
                 const data = await (response.json())
                 setProducts(data)
-                localStorage.setItem('datas', JSON.stringify(data))
+                // localStorage.setItem('datas', JSON.stringify(data))
             }
             catch (error) { 
                 console.log('Error fetching data:',error)
@@ -48,10 +48,10 @@ function ProductProvider({ children }) {
         fetchProducts()
     }, [])
     
-    useEffect(() => {
+    // useEffect(() => {
         
-        setProducts(JSON.parse(localStorage.getItem('datas')))
-    },[ID])
+    //     setProducts(JSON.parse(localStorage.getItem('datas')))
+    // },[])
     
     
     useEffect(() => {
