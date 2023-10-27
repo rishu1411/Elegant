@@ -1,16 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      primary: 'Poppins',
+    },
+    container: {
+      padding: {
+        DEFAULT: '30px',
+        lg: '0',
+      },
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        md: '2rem',
+        lg: '3rem',
+        xl:'4rem'
+      }
+    },
+    screens: {
+      xs:'450px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
+    },
     extend: {
+      colors: {
+        primary: '#222222',
+        secondary: '#F5E6E0',
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        hero: "url('../assets/bg_hero.svg')",
       },
     },
   },
