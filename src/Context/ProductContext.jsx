@@ -38,6 +38,7 @@ function ProductProvider({ children }) {
             try {
                 const response = await fetch('https://fakestoreapi.com/products')
                 const data = await (response.json())
+                setProducts(data)
                 localStorage.setItem('datas', JSON.stringify(data))
             }
             catch (error) { 
