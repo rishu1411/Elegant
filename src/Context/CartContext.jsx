@@ -51,6 +51,7 @@ function CartProvider({ children }) {
     })
     // sessionStorage.setItem('Cart',JSON.stringify(newCart))
     setCart(newCart)
+    localStorage.setItem('Cart',JSON.stringify(newCart))
   }
 
   const decreaseAmount = (id) => {
@@ -67,6 +68,7 @@ function CartProvider({ children }) {
         }
       })
       setCart(newCart)
+      localStorage.setItem('Cart',JSON.stringify(newCart))
     }
     if (cartItem.amount === 1) {
       removeFromCart(id)
@@ -98,6 +100,7 @@ function CartProvider({ children }) {
   function deleteCart() {
     // sessionStorage.clear('Cart')
     setCart([])
+    localStorage.setItem('Cart',JSON.stringify([]))
  }
 
 
