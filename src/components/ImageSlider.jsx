@@ -35,7 +35,7 @@ function ImageSlider() {
                 pagination={{
                     clickable:true
                 }}
-          className='lg:max-w-[300px] lg:my-10 max-w-[250px] '
+          className='sm:w-[200px] lg:max-w-[300px]  lg:mt-10 max-w-[250px] '
       >
           {
               image.map((item,key) => {
@@ -43,7 +43,7 @@ function ImageSlider() {
                       <SwiperSlide key={key} className=''>
                           <div >
                               
-                              <Image src={item.url} alt="fashion" height={400}    />
+                              <Image src={item.url} alt="fashion" className='w-64 lg:h-96 md:h-72 mt-10'     />
                           </div>
                           
                       </SwiperSlide>

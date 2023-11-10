@@ -32,14 +32,14 @@ function Icons({icons,text}) {
   return (
     <span className='flex flex-col text-xs items-center font-semibold '>
       <Link href='' className='md:text-sm lg:text-base'>{ icons}</Link>
-      <span className='hidden md:block ' >{text }</span>
+      <span className='hidden md:flex ' >{text }</span>
   </span>
   )
 }
 
 function Cart() {
   return (
-    <span><ShoppingCartIcon/>Shopping Cart</span>
+    <span className='m-0 p-0'><ShoppingCartIcon/>Shopping Cart</span>
   )
 }
 
