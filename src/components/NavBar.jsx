@@ -66,11 +66,8 @@ export default function NavBar() {
           </div>
           <div className="flex items-center justify-center md:gap-x-4 gap-x-3 order-3">
             <Icons icons={ <PersonIcon/>} text='Profile' />
-          <Icons icons={<FavoriteIcon />} text='Wishlist' />
-          <span className='flex flex-col'>
-            <SIdeBar anchor='right' text={<Cart />} icon={<ArrowForwardIcon />} children={<BadgeIcon />} />
-            <span>Bag</span>
-            </span>
+           <Icons icons={<FavoriteIcon/>} text='Wishlist'/>
+          <Icons icons={<SIdeBar anchor='right'  text={<Cart/> } icon={ <ArrowForwardIcon/>}  children={<BadgeIcon />} />} text='Bag'/>
             
           </div>
       </div>

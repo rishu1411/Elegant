@@ -49,7 +49,7 @@ export default function SIdeBar({children,anchor,className,icon,text }) {
 
   return (
     <div className={className}>
-      <IconButton onClick={() => setIsOpen(true)}>{ children}</IconButton>
+      <button onClick={() => setIsOpen(true)} className=''>{children}</button>
     <Drawer anchor={anchor}
       open={IsOpen}
         onClose={() => setIsOpen(false)}
